@@ -29,12 +29,12 @@ $offset = $listData['meta']['offset'] ?? 0;
                 <?php if (($btn['action'] ?? '') === 'submit'): ?>
                     <button type="submit" form="resource-form" class="btn btn-<?= htmlspecialchars($btn['type'] ?? 'primary') ?>">
                         <i class="<?= htmlspecialchars($btn['icon'] ?? '') ?> me-1"></i>
-                        <?= htmlspecialchars($btn['label'] ?? '') ?>
+                        <?= htmlspecialchars($t($btn['label'] ?? '')) ?>
                     </button>
                 <?php else: ?>
                     <a href="<?= htmlspecialchars($btn['target'] ?? '#') ?>" class="btn btn-<?= htmlspecialchars($btn['type'] ?? 'secondary') ?>">
                         <i class="<?= htmlspecialchars($btn['icon'] ?? '') ?> me-1"></i>
-                        <?= htmlspecialchars($btn['label'] ?? '') ?>
+                        <?= htmlspecialchars($t($btn['label'] ?? '')) ?>
                     </a>
                 <?php endif; ?>
             <?php endforeach; ?>

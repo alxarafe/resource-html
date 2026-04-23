@@ -282,13 +282,13 @@ function renderComponent($component, array $record, callable $t): string
                     <button type="submit" form="resource-form"
                             class="btn btn-<?= htmlspecialchars($btn['type'] ?? 'primary') ?>">
                         <i class="<?= htmlspecialchars($btn['icon'] ?? '') ?> me-1"></i>
-                        <?= htmlspecialchars($btn['label'] ?? '') ?>
+                        <?= htmlspecialchars($t($btn['label'] ?? '')) ?>
                     </button>
                 <?php else: ?>
                     <a href="<?= htmlspecialchars($btn['target'] ?? '#') ?>"
                        class="btn btn-<?= htmlspecialchars($btn['type'] ?? 'secondary') ?>">
                         <i class="<?= htmlspecialchars($btn['icon'] ?? '') ?> me-1"></i>
-                        <?= htmlspecialchars($btn['label'] ?? '') ?>
+                        <?= htmlspecialchars($t($btn['label'] ?? '')) ?>
                     </a>
                 <?php endif; ?>
             <?php endforeach; ?>
@@ -335,10 +335,6 @@ function renderComponent($component, array $record, callable $t): string
             <?php endforeach; ?>
         <?php endif; ?>
 
-        <div class="text-end mt-3">
-            <button type="submit" class="btn btn-resource-primary px-4 py-2">
-                <i class="fas fa-save me-2"></i><?= htmlspecialchars($t('save_changes') ?: 'Guardar') ?>
-            </button>
-        </div>
+
     </form>
 </div>
