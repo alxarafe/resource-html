@@ -16,6 +16,7 @@ Provides a `RendererContract` implementation using pure PHP and HTML templates (
 |---|---|---|
 | **[resource-controller](https://github.com/alxarafe/resource-controller)** | Core CRUD engine + UI components | ✅ Stable |
 | **[resource-eloquent](https://github.com/alxarafe/resource-eloquent)** | Eloquent ORM adapter | ✅ Stable |
+| **[resource-pdo](https://github.com/alxarafe/resource-pdo)** | Native PDO adapter | ✅ Stable |
 | **[resource-blade](https://github.com/alxarafe/resource-blade)** | Blade template renderer adapter | ✅ Stable |
 | **[resource-twig](https://github.com/alxarafe/resource-twig)** | Twig template renderer adapter | ✅ Stable |
 | **[resource-html](https://github.com/alxarafe/resource-html)** | Pure PHP/HTML template renderer adapter | ✅ Stable |

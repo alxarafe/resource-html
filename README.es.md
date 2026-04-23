@@ -16,6 +16,7 @@ Proporciona una implementación de `RendererContract` usando PHP puro y plantill
 |---|---|---|
 | **[resource-controller](https://github.com/alxarafe/resource-controller)** | Motor CRUD central + componentes UI | ✅ Estable |
 | **[resource-eloquent](https://github.com/alxarafe/resource-eloquent)** | Adaptador ORM Eloquent | ✅ Estable |
+| **[resource-pdo](https://github.com/alxarafe/resource-pdo)** | Adaptador nativo PDO | ✅ Estable |
 | **[resource-blade](https://github.com/alxarafe/resource-blade)** | Adaptador de renderizado con Blade | ✅ Estable |
 | **[resource-twig](https://github.com/alxarafe/resource-twig)** | Adaptador de renderizado con Twig | ✅ Estable |
 | **[resource-html](https://github.com/alxarafe/resource-html)** | Adaptador de renderizado con plantillas PHP/HTML | ✅ Estable |
